@@ -1,0 +1,100 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Todos",
+    "line": 1,
+    "id": "todos",
+    "tags": [],
+    "uri": "todos.feature",
+    "elements": [
+      {
+        "id": "todos;i-can-complete-one-of-several-todos",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "I can complete one of several todos",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the application is ready to use",
+            "result": {
+              "status": "passed",
+              "duration": 6056000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "an existing todo 1 being \"Adopter de bonnes pratiques de test\"",
+            "result": {
+              "status": "passed",
+              "duration": 604000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "an existing todo 2 being \"Comprendre le Keyword-Driven Testing\"",
+            "result": {
+              "status": "passed",
+              "duration": 639000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "an existing todo 3 being \"Automatiser des cas de test avec Robot Framework\"",
+            "result": {
+              "status": "passed",
+              "duration": 774000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I complete the todo 2",
+            "result": {
+              "status": "failed",
+              "duration": 76000000,
+              "error_message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Binding expression \"true\" cannot be assigned to.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n    at LiteralPrimitive.assign (webpack-internal:///X5gX:1233:11)\n    at Binding.updateSource (webpack-internal:///X5gX:5051:27)\n    at Binding.call (webpack-internal:///X5gX:5073:14)\n    at BehaviorPropertyObserver.callSubscribers (webpack-internal:///X5gX:423:17)\n    at BehaviorPropertyObserver.call (webpack-internal:///hij8:3908:10)\n    at TaskQueue._flushQueue (webpack-internal:///K/SW:92:14)\n    at TaskQueue.flushMicroTaskQueue (webpack-internal:///K/SW:143:10)\n    at MutationObserver.eval (webpack-internal:///K/SW:68:22)\nFrom previous event:\n    at run (http://localhost:9090/__cypress/runner/cypress_runner.js:169812:21)\n    at $Cy.cy.<computed> [as then] (http://localhost:9090/__cypress/runner/cypress_runner.js:170269:11)\n    at Context.runnable.fn (http://localhost:9090/__cypress/runner/cypress_runner.js:170496:21)\n    at callFn (http://localhost:9090/__cypress/runner/cypress_runner.js:104252:21)\n    at Test.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:9090/__cypress/runner/cypress_runner.js:104239:7)\n    at http://localhost:9090/__cypress/runner/cypress_runner.js:176219:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:9090/__cypress/runner/cypress_runner.js:176207:17)\n    at $Cypress.action (http://localhost:9090/__cypress/runner/cypress_runner.js:166637:28)\n    at Test.Runnable.run (http://localhost:9090/__cypress/runner/cypress_runner.js:174384:13)\n    at Runner.../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://localhost:9090/__cypress/runner/cypress_runner.js:104911:10)\n    at http://localhost:9090/__cypress/runner/cypress_runner.js:105037:12\n    at next (http://localhost:9090/__cypress/runner/cypress_runner.js:104820:14)\n    at http://localhost:9090/__cypress/runner/cypress_runner.js:104830:7\n    at next (http://localhost:9090/__cypress/runner/cypress_runner.js:104732:14)\n    at Hook.<anonymous> (http://localhost:9090/__cypress/runner/cypress_runner.js:104793:7)\n    at next (http://localhost:9090/__cypress/runner/cypress_runner.js:176135:22)\n    at http://localhost:9090/__cypress/runner/cypress_runner.js:176162:11\nFrom previous event:\n    at onNext (http://localhost:9090/__cypress/runner/cypress_runner.js:176159:57)\n    at done (http://localhost:9090/__cypress/runner/cypress_runner.js:104192:5)\n    at callFn (http://localhost:9090/__cypress/runner/cypress_runner.js:104275:7)\n    at Hook.../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://localhost:9090/__cypress/runner/cypress_runner.js:104239:7)\n    at http://localhost:9090/__cypress/runner/cypress_runner.js:176219:28\nFrom previous event:\n    at Object.onRunnableRun (http://localhost:9090/__cypress/runner/cypress_runner.js:176207:17)\n    at $Cypress.action (http://localhost:9090/__cypress/runner/cypress_runner.js:166637:28)\n    at Hook.Runnable.run (http://localhost:9090/__cypress/runner/cypress_runner.js:174384:13)\n    at next (http://localhost:9090/__cypress/runner/cypress_runner.js:104754:10)\n    at http://localhost:9090/__cypress/runner/cypress_runner.js:104798:5\n    at timeslice (http://localhost:9090/__cypress/runner/cypress_runner.js:98724:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the todo 2 should be completed",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the todo 1 should be uncompleted",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the todo 3 should be uncompleted",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
