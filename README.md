@@ -1,5 +1,9 @@
 # Cypress_issue_14802
-Clone or download project code source
-run 'npm install' command to install node modules
-run 'npm run cy:open' command to open Cypress
-Execute todos.feature test file
+
+1) Clone or download project code source
+
+2) Run 'npm install' command to install node modules
+
+3) Run 'npm run cy:open' command to open Cypress
+
+4) Execute todos.feature test file
